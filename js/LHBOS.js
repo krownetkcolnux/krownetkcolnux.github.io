@@ -9,7 +9,7 @@ var pass = prompt('enter authentication passcode');
 const backgroundmusic = new Audio("https://xunlocknetworkenterprise.github.io/49%20-%20Mii%20Maker%20-%20Editing%20a%20Mii%20Gamepad.mp3")
 backgroundmusic.play();
 backgroundmusic.loop = true;
-if (alert(localStorage.getItem("theme")), null == localStorage.getItem("theme") && (localStorage.setItem("theme", "https://xunlocknetworkenterprise.github.io/demo/css/clockstyle.css"), localStorage.setItem("facReset", "false")), (localStorage.getItem("theme").length < 7 || "true" == localStorage.getItem("facReset")) && (localStorage.setItem("theme", "https://xunlocknetworkenterprise.github.io/demo/css/clockstyle.css"), localStorage.setItem("facReset", "false")), addTheme(localStorage.getItem("theme")), null == (apps = JSON.parse(localStorage.getItem("apps")))) {
+if (alert(localStorage.getItem("theme")), null == localStorage.getItem("theme") && (localStorage.setItem("theme", "https://krownetkcolnux.github.io/css/clockstyle.css"), localStorage.setItem("facReset", "false")), (localStorage.getItem("theme").length < 7 || "true" == localStorage.getItem("facReset")) && (localStorage.setItem("theme", "https://krownetkcolnux.github.io/css/clockstyle.css"), localStorage.setItem("facReset", "false")), addTheme(localStorage.getItem("theme")), null == (apps = JSON.parse(localStorage.getItem("apps")))) {
     localStorage.setItem("apps", JSON.stringify(new Array));
     var apps = new Array
 }
@@ -99,7 +99,7 @@ function unhide() {
 }
 
 function factoryReset() {
-    confirm("Are you ABSOLUTELY SURE you want to factory reset Home Brew?\nAll your themes and apps (and some data) will be gone!") && (localStorage.setItem("apps", "[]"), localStorage.setItem("facReset", "true"), addTheme("https://xunlocknetworkenterprise.github.io/demo/css/clockstyle.css"), document.location.reload())
+    confirm("Are you ABSOLUTELY SURE you want to factory reset Home Brew?\nAll your themes and apps (and some data) will be gone!") && (localStorage.setItem("apps", "[]"), localStorage.setItem("facReset", "true"), addTheme("https://krownetkcolnux.github.io/css/clockstyle.css"), document.location.reload())
 }
 
 function showMenu() {
