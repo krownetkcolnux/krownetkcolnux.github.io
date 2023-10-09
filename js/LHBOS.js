@@ -62,10 +62,14 @@ function addApp(e) {
 }
 
 function installAppV2(e, t) {
+    const install = new Audio("https://bloxdeck.github.io/sounds/deck_ui_launch_game.wav")
+  install.play();
     1 == (0 == e.includes("clockwork-store.glitch.me") ? confirm("//// READ THIS MESSAGE!!!! ////\nAn untrusted app is trying to install a script to LHBOS. Apps can easily install malicious scripts apps will be reviewed by security to stop malware to break lhbos.\n\nAPP URL: " + t + "\n\nAre you ABSOULTELY SURE you want to continue with installation?") : confirm("Are you sure you want to install this app?")) && (1 == apps.includes(t) ? alert("App is already installed!") : (apps.push(t), addApp(t), localStorage.setItem("apps", JSON.stringify(apps)), console.log(apps)))
 }
 
 function installApp(e) {
+  const install = new Audio("https://bloxdeck.github.io/sounds/deck_ui_launch_game.wav")
+  install.play();
     if (openapp("appstoreinstalling", "mongus"), null == e) e = prompt("Enter the URL of your custom script.");
     1 == apps.includes(e) ? alert("App is already installed!") : (console.warn("installApp() is deprecated! We've made it so it doesn't install apps forever for security reasons.\nPlease use installAppV2() instead"), 1 == confirm("This app is using outdated code - it may break at any time. Continue?") && addApp(e)), openapp("appstore", "mongus")
 }
