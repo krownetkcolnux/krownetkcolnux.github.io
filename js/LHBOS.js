@@ -36,8 +36,8 @@ function uninstallApp(e) {
 
 function openapp(e, t) {
     var a = document.getElementById("main");
-
-     backgroundmusic.play();
+const menu = new Audio("https://bloxdeck.github.io/sounds/deck_ui_show_modal.wav")
+     menu.play();
     for (const e of a.children) e.style = "display: none;";
     if (null != (e = document.getElementById(e))) {
         if ("IFRAME" == e.nodeName && "about:blank" == e.src && (e.src = t), "flashgame" == e.id) e.remove(), (e = document.createElement("embed")).id = "flashgame", e.className = "app", e.src = t, document.getElementById("main").appendChild(e);
